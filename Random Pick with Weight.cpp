@@ -11,9 +11,9 @@ public:
         cin.tie(NULL);
         cout.tie(NULL);
         
-        v.pb(w[0]);
+        v.push_back(w[0]);
         for(int i=1;i<w.size();++i)
-            v.pb(v.back()+w[i]);    //Cumulative SUM
+            v.push_back(v.back()+w[i]);    //Cumulative SUM
     }
     
     int pickIndex() {
